@@ -24,7 +24,7 @@ set results {}
 
 foreach pressure $pressures {
     for {set i 1} {$i < $I} {incr i} {
-		cd $polymer_path
+	cd $polymer_path
         cd Cool_${pressure}_${i}/
         topo readlammpsdata cooling_${pressure}_${i}.data full
 
